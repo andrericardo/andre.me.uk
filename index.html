@@ -40,10 +40,9 @@
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           </a>
-          <a class="brand" href="#">André Ricardo</a>
-          <!--<div class="nav-collapse collapse"> -->
             <ul class="nav">
-              <li><a href="#work">Work</a></li>
+              <li><a class="brand" href="#home">André Ricardo</a></li>
+              <!--<li><a href="#work">Work</a></li>-->
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -52,44 +51,112 @@
       </div>
     </div>
 
-    <div class="container">
+    <div id="home" class="container">
         <div class="hero-unit">
-            <h2 id="home">Home</h2>
+            <h2>Full-stack Software Developer</h2>
             <p>I am a polyglot programmer with no trouble in adapting and working with a myriad of different technologies. I love Open Source and the Web.</p>
             <p>I work in any part of the stack of a modern web framework, from the database or services to the client javascript, and I like that.</p>
         </div>
     </div> <!-- /container -->
 
-    <div id="work" class="container">
-            <div class="hero-unit">
-                <h2>Work</h2>
-                <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-                <img data-src="./assets/js/holder.js/300x500" alt="">
+    <!--
+    <div id="work" class="container" style="padding: 40px">
+        <div>
+            <h2 class="header">Experience</h2>
+            <div class="row" style="margin-top:1.5em;">
+                <div class="span12">
+                    <h4>Contractor Software Developer</h4>
+                    <p><br>
+                    <span class="note">HSBC | September 2011 – Present</span></p>
+                    <p></p>
+                    
+                </div>
             </div>
-    </div> <!-- /container -->
+        </div>
+    </div> --><!-- /container -->
     
-    
-    <div id="projects" class="container">
-        <div class="hero-unit">
-        <h2>Projects</h2>       
-        <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-        <img data-src="./assets/js/holder.js/300x500" style="width: 260px; height: 180px;" alt="">
+    <div id="projects" class="container" style="padding-top: 40px">
+        <h2>Projects</h2>
 
-        <p>
-        Site ISCTE-IUL MIT Portugal Venture Competition
-        Musipic (Codebits 2009)
-        MarketPoly
-        Site Projecto Sapo Analytics Codebits 2008
-        Site da 2042ª Companhia de Comandos
-        Site sobre Hidrogeologia
-        </p>
+        <div class="row-fluid">
+            <div class="span8 offset2">
+        
+            <div id="myCarousel" class="carousel slide">
+                
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
 
-        </div>  
+                    <div class="active item">
+                        <img alt="" src="assets/img/projects/MITPortugal-iei-01.png">
+                        <div class="carousel-caption">
+                            <h4><a href="http://mitportugal-iei.org/" target="_blank">ISCTE-IUL MIT Portugal Venture Competition (2011)</a></h4>
+                            <p>Joomla, PHP and MySQL</p>
+                            <p>Joomla, PHP and MySQL</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img alt="Musipic (Codebits 2009) site screenshot" src="assets/img/projects/Musipic-02.png">
+                        <div class="carousel-caption">
+                            <h4><a href="http://musipic.fridaycode.org/" target="_blank">Musipic (Codebits 2009)</a></h4>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img alt="" src="assets/img/projects/Marketpoly-03.png">
+                        <div class="carousel-caption">
+                            <h4><a href="http://marketpoly.fridaycode.org/index_offers.php" target="_blank">MarketPoly (2009)</a></h4>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img alt="" src="assets/img/bootstrap-mdo-sfmoma-03.jpg">
+                        <div class="carousel-caption">
+                            <h4>Sapo Analytics (Codebits 2008)</h4>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img alt="" src="assets/img/projects/2042comandos-04.png">
+                        <div class="carousel-caption">
+                            <h4><a href="http://2042comandos.com/" target="_blank">2042ª Companhia de Comandos (2007, portuguese)</a></h4>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img alt="" src="assets/img/projects/Hidrogeologia-05.png">
+                        <div class="carousel-caption">
+                            <h4><a href="http://hidrogeologia.no.sapo.pt/" target="_blank">Site about hydrogeology (2006, portuguese)</a></h4>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                </div> <!-- end of carousel-inner-->
+
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div> <!-- /Carousel -->
+        </div> <!-- /span 8 div -->
+    </div><!-- /row fluid -->
+
+    <hr>
     </div> <!-- /container -->
 
 
-    <div id="contact">
-        <div class="container">
+    <div id="contact" class="container">
+        <div>
             <h2>Contact</h2>
             <address>
             <strong>André Ricardo</strong><br>
@@ -109,6 +176,8 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- Bootstrap -->
     <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    bootstrap-carousel.js
     <script src="./assets/js/holder.js"></script>    
     <script src="./assets/js/jquery.easing.1.3.js"></script>
 
