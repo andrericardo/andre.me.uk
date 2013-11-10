@@ -7,18 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <!-- Bootstrap -->
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
     <!-- Project -->
     <link href="./assets/css/style.css" rel="stylesheet">
-    
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <!--<link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">-->
+
+    <!-- Optional theme 
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css"> -->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -40,7 +36,7 @@
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           </a>
-            <ul class="nav">
+            <ul class="nav navbar-nav">
               <li><a class="brand" href="#home">André Ricardo</a></li>
               <!--<li><a href="#work">Work</a></li>-->
               <li><a href="cv_andre_ricardo.pdf">CV</a></li>
@@ -53,7 +49,7 @@
     </div>
 
     <div id="home" class="container">
-        <div class="hero-unit">
+        <div class="jumbotron">
             <h2>Full-stack Software Developer</h2>
             <p>I am a polyglot programmer with no trouble in adapting and working with a myriad of different technologies. I love Open Source and the Web.</p>
             <p>I work in any part of the stack of a modern web framework, from the database or services to the client javascript, and I like that.</p>
@@ -65,7 +61,7 @@
         <div>
             <h2 class="header">Experience</h2>
             <div class="row" style="margin-top:1.5em;">
-                <div class="span12">
+                <div class="col-md-12">
                     <h4>Contractor Software Developer</h4>
                     <p><br>
                     <span class="note">HSBC | September 2011 – Present</span></p>
@@ -79,78 +75,79 @@
     <div id="projects" class="container" style="padding-top: 40px">
         <h2>Projects</h2>
 
-        <div class="row-fluid">
-            <div class="span8 offset2">
-        
-            <div id="myCarousel" class="carousel slide">
-                
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                    <li data-target="#myCarousel" data-slide-to="5"></li>
-                </ol>
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-
-                    <div class="active item">
-                        <img alt="" src="assets/img/projects/MITPortugal-iei-01.png">
-                        <div class="carousel-caption">
-                            <h4><a href="http://mitportugal-iei.org/" target="_blank">ISCTE-IUL MIT Portugal Venture Competition (2011)</a></h4>
-                            <p>Created the website, provided support and training for the people maintaining the site</p>
-                            <p>Joomla, PHP, HTML, CSS and MySQL</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <img alt="Musipic (Codebits 2009) site screenshot" src="assets/img/projects/Musipic-02.png">
-                        <div class="carousel-caption">
-                            <h4><a href="http://musipic.fridaycode.org/" target="_blank">Musipic (Codebits 2009)</a></h4>
-                            <p>A website that recommends Creative Commons song based on an uploaded picture. Entry for the Codebits 2009 programming contest</p>
-                            <p>ImageMagick, Jamendo API, PHP, MySQL</p>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     
-                    <div class="item">
-                        <img alt="" src="assets/img/projects/Marketpoly-03.png">
-                        <div class="carousel-caption">
-                            <h4><a href="http://marketpoly.fridaycode.org/index_offers.php" target="_blank">MarketPoly (2009)</a></h4>
-                            <p>Marketplace to buy and sell streets for the Monopoly City Streets game (where you could buy and build any street in the world). Automated game playing (with bots)</p>
-                            <p>JSON, Web scraping, PHP, MySQL</p>
-                        </div>
-                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
 
-                    <div class="item">
-                        <img alt="" src="assets/img/projects/2042comandos-04.png">
-                        <div class="carousel-caption">
-                            <h4><a href="http://2042comandos.com/" target="_blank">2042ª Companhia de Comandos (2007, portuguese)</a></h4>
-                            <p>Website for the 2042ª Companhia de Comandos</p>
-                            <p>HTML, CSS</p>
+                        <div class="item active">
+                            <img alt="" src="assets/img/projects/MITPortugal-iei-01.png">
+                            <div class="carousel-caption">
+                                <h4><a href="http://mitportugal-iei.org/" target="_blank">ISCTE-IUL MIT Portugal Venture Competition (2011)</a></h4>
+                                <p>Created the website, provided support and training for the people maintaining the site
+                                </br>Joomla, PHP, HTML, CSS and MySQL</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="item">
-                        <img alt="" src="assets/img/projects/Hidrogeologia-05.png">
-                        <div class="carousel-caption">
-                            <h4><a href="http://hidrogeologia.no.sapo.pt/" target="_blank">Site about hydrogeology (2006, portuguese)</a></h4>
-                            <p>Fondly remembering my first website <3 made for the geography course in high school. Graded 20 out of 20 at the time :) 
-                            </p>
-                            <p>HTML, Flash MX</p>
+
+                        <div class="item">
+                            <img alt="Musipic (Codebits 2009) site screenshot" src="assets/img/projects/Musipic-02.png">
+                            <div class="carousel-caption">
+                                <h4><a href="http://musipic.fridaycode.org/" target="_blank">Musipic (Codebits 2009)</a></h4>
+                                <p>A website that recommends Creative Commons song based on an uploaded picture. Entry for the Codebits 2009 programming contest
+                                </br>ImageMagick, Jamendo API, PHP, MySQL</p>
+                            </div>
                         </div>
-                    </div>
-                </div> <!-- end of carousel-inner-->
+                        
+                        <div class="item">
+                            <img alt="" src="assets/img/projects/Marketpoly-03.png">
+                            <div class="carousel-caption">
+                                <h4><a href="http://marketpoly.fridaycode.org/index_offers.php" target="_blank">MarketPoly (2009)</a></h4>
+                                <p>Marketplace to buy and sell streets for the Monopoly City Streets game (where you could buy and build any street in the world). Automated game playing (with bots)
+                                </br>JSON, Web scraping, PHP, MySQL</p>
+                            </div>
+                        </div>
 
-                <!-- Carousel nav -->
-                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-            </div> <!-- /Carousel -->
-        </div> <!-- /span 8 div -->
-    </div><!-- /row fluid -->
+                        <div class="item">
+                            <img alt="" src="assets/img/projects/2042comandos-04.png">
+                            <div class="carousel-caption">
+                                <h4><a href="http://2042comandos.com/" target="_blank">2042ª Companhia de Comandos (2007, portuguese)</a></h4>
+                                <p>Website for the 2042ª Companhia de Comandos
+                                </br>HTML, CSS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <img alt="" src="assets/img/projects/Hidrogeologia-05.png">
+                            <div class="carousel-caption">
+                                <h4><a href="http://hidrogeologia.no.sapo.pt/" target="_blank">Site about hydrogeology (2006, portuguese)</a></h4>
+                                <p>Fondly remembering my first website <3 made for the geography course in high school. Graded 20 out of 20 at the time :)
+                                </br>HTML, Flash MX</p>
+                            </div>
+                        </div>
+                    </div> <!-- end of carousel-inner-->
 
+                    <!-- Carousel nav -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div> <!-- /Carousel -->
+            </div> <!-- /col-md-8 col-md-offset-2sp -
+         </div> <!-- /row -->
     <hr>
-    </div> <!-- /container -->
+    </div> <!-- /container  projects -->
 
 
     <div id="contact" class="container">
@@ -170,11 +167,14 @@
 
     <!-- Le javascript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
     <!-- Bootstrap -->
-    <script src="./assets/js/bootstrap.js"></script>
-    <script src="./assets/js/bootstrap.js"></script>
+    <!--<script src="./assets/js/bootstrap.js"></script> -->
     <script src="./assets/js/holder.js"></script>    
     <script src="./assets/js/jquery.easing.1.3.js"></script>
 
